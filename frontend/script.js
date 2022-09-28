@@ -1,35 +1,70 @@
-const monthComponent = function (nth, name, days){
-   let daysHtml = "";
+// function hundred() {
+//     for (let i = 1; i<=100; i += 1) {
+//     console.log(i);
+//     }
+//     return "lofasz"
+// }
+//   console.log(hundred());
 
-    for (let i = 1; i <=days; i++ ){
-        daysHtml += dayComponent(i);
+//100-ig kiírja
+    // for (let i = 1; i<=100; i += 1) {
+    // console.log(i);
+    // }
+ //100-ig kiírja VÉGE
+
+//minden párost kiír
+
+
+//     for (let i = 1; i<=100; i+=1){
+//       if (i % 2 === 0) {
+//         console.log(i)
+//       } 
+//     }
+   
+    
+
+// console.log("-------- Masik megoldas --------")
+
+//     for (let i = 1; i<=100; i+=2)
+//     console.log(i)
+//minden párost kiír VÉGE
+
+//5-el osztható
+
+// for (let i = 1; i<=100; i+=1){
+//           if (i % 5 === 0) {
+//             console.log(i)
+//           } 
+//         }
+
+
+//5-el osztható vége
+
+
+
+//azok a számok, amikben van 1-es
+
+
+    for (let i = 1; i<=100; i+=1){
+        i.toString();
+        console.log(i.toString());
+  }
+
+//   let valami = 24;
+//   let hund = valami.toString();
+//   console.log(valami)
+//   console.log(hund)
+
+
+//azok a számok, amikben van 1-es VÉGE
+
+//Minden második betűből új string készül
+ function stringValue (str, n){
+    let result = ""
+   for (let i = 1; i<str.lenght; i+=2){ 
+        if (str) {
+
+        }
     }
 
-    return`
-        <section id="${nth}" class="${name}">
-            <h2>${name}</h2>
-            ${daysHtml}
-        </section>
-    `
-
-};
-
-const dayComponent = function(dayCount) {
-    return `
-        <div class="day">${dayCount}</div>    
-    `
-};
-
-console.log("hello");
-const rootElement = document.querySelector("#root");
-
-rootElement.insertAdjacentHTML("beforeend", "<button>show calendar</button>")
-
-// const buttonElement = rootElement.querySelector("button");
-// buttonElement.addEventListener("click" , function(){
-// })
-
-rootElement.insertAdjacentHTML("beforeend", monthComponent(1, "January" , 31));
-rootElement.insertAdjacentHTML("beforeend", monthComponent(2, "February" , 28));
-rootElement.insertAdjacentHTML("beforeend", monthComponent(20, "Pityuhónap" , 9));
-// rootElement.style.color="blue"; NEM SZABAD CSINÁLNI
+ }
