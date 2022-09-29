@@ -53,14 +53,19 @@
     // }
     //     // console.log(i.toString());
 
-    let oneIn = []
-for (let i = 1; i<=100; i+=1) {
-  if (i.toString().substring(0,1) === "1" || i.toString().substring(1,2) === "1") {
-    console.log(i);
-        oneIn.push(i)
-  }
-}
-console.log(oneIn);
+
+
+
+//EZ A JÓ!!!!!!!
+
+//     let oneIn = []
+// for (let i = 1; i<=100; i+=1) {
+//   if (i.toString().substring(0,1) === "1" || i.toString().substring(1,2) === "1") {
+//     console.log(i);
+//         oneIn.push(i)
+//   }
+// }
+// console.log(oneIn);
    
       
 
@@ -94,3 +99,25 @@ console.log(oneIn);
 // for (let szam of szamok) {
 
 // }
+
+
+// let languages ={
+//   "Java" : 10, 
+//   "Ruby" : 80, 
+//   "Python" : 65
+// }
+
+// console.log(myLanguages);
+
+https://stackoverflow.com/questions/68158413/how-can-i-remove-every-nth-character-from-a-string-in-javascript
+function myLanguages(result) {
+   for (let i; i<result.length; i++){
+    // let curr = result[i]
+    let next = result[i.substring()]
+    
+    if(next === i){
+
+    }
+
+  }
+}
