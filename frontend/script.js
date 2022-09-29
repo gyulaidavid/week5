@@ -45,36 +45,51 @@
 //azok a számok, amikben van 1-es
 
 
-//     for (let i = 1; i<=100; i+=1){
-//         i.toString();
-//         console.log(i.toString());
-//   }
+    // for (let i = 1; i<=100; i+=1){
+       
+    //     if (i.toString().includes(1)) {
+    //       console.log(i);
+    //     }
+    // }
+    //     // console.log(i.toString());
 
-// //   let valami = 24;
-// //   let hund = valami.toString();
-// //   console.log(valami)
-// //   console.log(hund)
-
-
-// //azok a számok, amikben van 1-es VÉGE
-
-// //Minden második betűből új string készül
-//  function stringValue (str, n){
-//     let result = ""
-//    for (let i = 1; i<str.lenght; i+=2){ 
-//         if (str) {
-
-//         }
-//     }
-
-//  }
-
-let szamok = [2, 4, 13, 4, 6, 42]
-
-let paratlanSzamok = 0;
-for(i=0; i<szamok.length; i++){
-  paratlanSzamok += szamok[i] % 2 === 1 ? 1 : 0
+    let oneIn = []
+for (let i = 1; i<=100; i+=1) {
+  if (i.toString().substring(0,1) === "1" || i.toString().substring(1,2) === "1") {
+    console.log(i);
+        oneIn.push(i)
+  }
 }
+console.log(oneIn);
+   
+      
+
+
+// // //   let valami = 24;
+// // //   let hund = valami.toString();
+// // //   console.log(valami)
+// // //   console.log(hund)
+
+
+// // //azok a számok, amikben van 1-es VÉGE
+
+// // //Minden második betűből új string készül
+// //  function stringValue (str, n){
+// //     let result = ""
+// //    for (let i = 1; i<str.lenght; i+=2){ 
+// //         if (str) {
+
+// //         }
+// //     }
+
+// //  }
+
+// let szamok = [2, 4, 13, 4, 6, 42]
+
+// let paratlanSzamok = 0;
+// for(i=0; i<szamok.length; i++){
+//   paratlanSzamok += szamok[i] % 2 === 1 ? 1 : 0
+// }
 
 // for (let szam of szamok) {
 
