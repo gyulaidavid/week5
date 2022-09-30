@@ -7,26 +7,26 @@
 //   console.log(hundred());
 
 //100-ig kiírja
-    // for (let i = 1; i<=100; i += 1) {
-    // console.log(i);
-    // }
+    for (let i = 1; i<=100; i += 1) {
+    console.log(i);
+    }
  //100-ig kiírja VÉGE
 
 //minden párost kiír
 
 
-//     for (let i = 1; i<=100; i+=1){
-//       if (i % 2 === 0) {
-//         console.log(i)
-//       } 
-//     }
+    for (let i = 1; i<=100; i+=1){
+      if (i % 2 === 0) {
+        console.log(i)
+      } 
+    }
    
     
 
 // console.log("-------- Masik megoldas --------")
 
-//     for (let i = 1; i<=100; i+=2)
-//     console.log(i)
+    for (let i = 1; i<=100; i+=2)
+    console.log(i)
 //minden párost kiír VÉGE
 
 //5-el osztható
@@ -58,14 +58,14 @@
 
 //EZ A JÓ!!!!!!!
 
-//     let oneIn = []
-// for (let i = 1; i<=100; i+=1) {
-//   if (i.toString().substring(0,1) === "1" || i.toString().substring(1,2) === "1") {
-//     console.log(i);
-//         oneIn.push(i)
-//   }
-// }
-// console.log(oneIn);
+    let oneIn = []
+for (let i = 1; i<=100; i+=1) {
+  if (i.toString().substring(0,1) === "1" || i.toString().substring(1,2) === "1") {
+    console.log(i);
+        oneIn.push(i)
+  }
+}
+console.log(oneIn);
    
       
 
