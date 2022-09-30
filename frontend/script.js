@@ -94,7 +94,7 @@ const dayComponent = function (dayCount) {
     `;
 };
 
-console.log("hello");
+// console.log("hello");
 console.log(year[0]);
 const rootElement = document.querySelector("#root");
 
@@ -128,6 +128,35 @@ buttonElement.addEventListener("click", function () {
     }
 
 });
+
+// GÁBOR január eltűnik!!!
+const hideDays = function (days){
+  for (let day of days);
+  days.classList("hidden")
+}
+
+const initJanuaryEvents = function () {
+let days = document.querySelectorAll(".January .days .day");
+
+}
+//Vége! 
+
+//Ugyanaz, mint alatta!!!
+// const dayElements = document.querySelectorAll(".day");
+// dayElements.forEach(function (day){
+// day.addEventListener("click", function(event){
+// console.log(event);
+// day.classList.toggle("clicked")
+// event.target.classList.toggle(".clicked") --> még nem kell vele foglalkozni
+// }
+// })
+
+const dayElements = document.querySelectorAll(".day");
+for (let i = 0; i < dayElements.length; i++)
+dayElements[i].addEventListener("click" function(){
+  dayElements[i].classList.toggle("clicked")
+})
+
 
 // rootElement.insertAdjacentHTML("beforeend", monthComponent(1, "January" , 31));
 // rootElement.insertAdjacentHTML("beforeend", monthComponent(2, "February" , 28));
