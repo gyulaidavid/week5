@@ -1,16 +1,134 @@
 #root {
-    color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
 
-    .January{
-        color: green;
 
-        // &#1{
-        //     background-color: chocolate;
-        // }
-        
-        .day{
-            color: darkgray;
+    section {
+        width: 100%;
+        max-width: 400px;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+ */
+
+
+        .days {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            /* min-height: 200px; */
+            align-items: flex-start;
+
+            .day {
+                width: 10%;
+                box-sizing: border-box;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                text-align: center;
+                padding: 5px 0;
+                margin-bottom: 10px;
+                display: block;
+                transition: all 0.5s ease;
+
+            }
+
         }
+
+    }
+
+    .January {
+        background-color: aquamarine;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .February {
+        background-color: darkgoldenrod;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .March {
+        background-color: darkviolet;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .April {
+        background-color: chartreuse;
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+
+    .May {
+        background-color: crimson;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .June {
+        background-color: dodgerblue;
+        grid-column: 3/5;
+        grid-row: 4/5;
+    }
+
+    .July {
+        background-color: gold;
+    }
+
+    .August {
+        background-color: hotpink;
+    }
+
+    .September {
+        background-color: olivedrab;
+    }
+
+    .October {
+        background-color: orangered;
+    }
+
+    .November {
+        background-color: indianred;
+    }
+    .December {
+        background-color: cornflowerblue;
+    }
+
+
+    button {
+        width: 120px;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .day {
+        color: red;
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .day {
+        font-size: 20px;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clicked {
+    transform: rotate(180deg);
+    
+}
