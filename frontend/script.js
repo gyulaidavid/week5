@@ -82,13 +82,15 @@ const monthComponent = function (nth, name, days) {
 
   for (let i = 1; i <= days; i++) {
       daysHtml += dayComponent(i);
-  }
+      }
 
   return `
     <section id="${nth}" class="${name}">
+      <div class="card">    
           <h2>${name}</h2>
           <div class="days">${daysHtml}</div>
           <div class="selected-day"></div>
+      </div>
     </section>  
   `
 }
@@ -120,13 +122,6 @@ buttonElement.addEventListener("click", function () {
       buttonElement.setAttribute("disabled", "");
       buttonElement.insertAdjacentHTML("beforeend", uzenet());
   } */
-
-
-
-
-
-
-
   /* rootElement.insertAdjacentHTML("beforeend", monthComponent(1, "January", 31));
   rootElement.insertAdjacentHTML("beforeend", monthComponent(2, "February", 28));*/
 
@@ -164,15 +159,15 @@ const showDayInfo = function (dayIndex) {
   selectedDay.textContent = `January ${dayIndex}`
 }
 
-/* const initJanuaryEvents = function () {
-  let days = document.querySelectorAll(".January .days .day");
-  for(let day of days) {
-      day.addEventListener("click", function () {
-          hideDays(days);
-          showDayInfo(day.textContent);
-      });
-  } 
-};   */
+//  const initJanuaryEvents = function () {
+//   let days = document.querySelectorAll(".January .days .day");
+//   for(let day of days) {
+//       day.addEventListener("click", function () {
+//           hideDays(days);
+//           showDayInfo(day.textContent);
+//       });
+//   } 
+// };  
 
 
 
