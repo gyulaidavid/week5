@@ -151,7 +151,7 @@ for(let i = 0; i<str.length; i++) {
      // We want to match the index of the character to `n`
      // We use modulo here to check the remainder,
      // but we don't want to eliminate the character at index 0
-     if (i > 0 && i % 2 === 0) {
+     if (i > 0 && i % 2 !== 0) {
  
        // When the condition is met, splice out the element
        // and decrement the length value
@@ -165,3 +165,19 @@ for(let i = 0; i<str.length; i++) {
  }
  
  console.log(removeChar(str, 2));
+// --------------------------------------
+
+ const str = "Pacalosteknős";
+
+ function removeChar(str, n) {
+   for (let i = 0; i < str.length; i++) {
+     if (i > 0 && i % 2 !== 0) {
+        return str.substring(removeChar+=i);
+     }
+   }
+  //  return arr.push('');
+ }
+ console.log(removeChar(str, 2));
+
+
+
