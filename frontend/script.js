@@ -132,7 +132,7 @@ buttonElement.addEventListener("click", function () {
 // GÁBOR január eltűnik!!!
 const hideDays = function (days){
   for (let day of days);
-  days.classList("hidden")
+  days.classList.add("hidden")
 }
 
 const initJanuaryEvents = function () {
