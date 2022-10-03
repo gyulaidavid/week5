@@ -159,6 +159,11 @@ const showDayInfo = function (dayIndex) {
   selectedDay.textContent = `January ${dayIndex}`
 }
 
+const hideDaysInfo = function (){
+  let selectedDay = document.querySelector(".January .selected-day");
+  selectedDay.textContent = ""; //const backDays function részhez kell beírni 
+}
+
 //  const initJanuaryEvents = function () {
 //   let days = document.querySelectorAll(".January .days .day");
 //   for(let day of days) {
