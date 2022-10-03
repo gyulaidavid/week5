@@ -121,3 +121,47 @@ function myLanguages(result) {
 
   }
 }
+
+let str="pacalospalacsinta"
+function removeTwoChar (str) {
+for(let i = 0; i<str.length; i++) {
+   // let splitString = i.split("");
+    if (splitString.substring(i % 2 === 0, -1 )) {
+
+
+    }
+
+}
+ }
+
+
+ const str = "You s$eem t%o be =very [happy? thes+e day$s!";
+
+ function removeChar(str, n) {
+ 
+   // Create an array from the string
+   const arr = str.split('');
+ 
+   // Iterate over the array
+   // We make sure to create a separate variable for the
+   // array length so that we can decrement when the
+   // condition is met
+   for (let i = 0, l = arr.length; i < l; i++) {
+ 
+     // We want to match the index of the character to `n`
+     // We use modulo here to check the remainder,
+     // but we don't want to eliminate the character at index 0
+     if (i > 0 && i % 2 === 0) {
+ 
+       // When the condition is met, splice out the element
+       // and decrement the length value
+       arr.splice(i, 1);
+       l--;
+     }
+   }
+ 
+   // Return a joined-up array
+   return arr.join('');
+ }
+ 
+ console.log(removeChar(str, 2));
